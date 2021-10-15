@@ -1,0 +1,261 @@
+/*=== Fonts ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Merriweather:wght@400;700&display=swap');
+
+/*======================
+    General Styles
+======================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    max-width: 1440px;
+}
+
+h1, h2, h3{
+    font-size: 4em;
+    font-weight: normal;
+}
+
+h3{
+    padding-bottom: 2.5vh;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    line-height: 40px;
+    color: #202020;
+    font-size: 1.5em;
+}
+
+ul{
+    list-style: none;
+}
+
+/*======================
+        Navbar
+======================*/
+
+nav>ul{
+    text-align: right;
+}
+
+nav>ul>li{
+    display: inline-block;
+    padding: 1%;
+}
+    
+nav>ul>li>a{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #202020;
+}
+
+/*======================
+    Header Styles
+======================*/
+
+header{
+    background: url("../img/illustration1.gif") right/contain no-repeat;
+    padding: 0 0 20vh 10vw;
+    margin-bottom: 15vh;
+}
+
+header>h1:nth-of-type(1){
+    padding-top: 15vh;
+}
+
+header>h1:nth-of-type(2){
+    padding-bottom: 2.5vh;
+}
+
+header>p:nth-of-type(3){
+    padding-bottom: 1vh;
+}
+
+header>a:nth-of-type(1){
+    display: inline-block;
+    padding: 2vh 2vw;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 1vw;
+}
+
+header>a:nth-of-type(2){
+    display: inline-block;
+    padding: 2vh 2vw;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0.1px 0.1px black;
+}
+
+/*======================
+    Page1 - Real beauty
+======================*/
+
+main>article:nth-of-type(1){
+    background: url("../img/illustration2.png") left/contain no-repeat;
+    background-position-x: 10vw;
+    padding: 18.5vh 0 2.5vh 48.5vw;
+}
+
+/*======================
+Page2 - Expressiveness
+======================*/
+
+main>article:nth-of-type(2){
+    background: url("../img/illustration3.png") right/contain no-repeat;
+    background-position-x: 58vw;
+    padding: 14.5vh 40vw 1vh 10vw;
+    margin-top: 30vh;
+}
+
+/*======================
+    Page3 - illustrations
+======================*/
+
+main>article:nth-of-type(3){
+    text-align: center;
+    margin-top: 30vh;
+}
+
+main>article:nth-of-type(3)>div>img{
+    width: 30vw;
+    margin: 10vh 0;
+    border-radius: 42%;
+}
+
+main>article:nth-of-type(3)>div>img:nth-of-type(-n+2):hover{
+    box-shadow: 0 0 6px 0px #333;
+}
+
+/*======================
+    Page4 - examples
+======================*/
+
+main>article:nth-of-type(4){
+    text-align: center;
+    margin-top: 5vh;
+}
+
+main>article:nth-of-type(4)>div>img{
+    margin: 5vh 2.5vw;
+    width: 40vw;
+}
+
+main>article:nth-of-type(4)>div>img:nth-of-type(2):hover{
+    box-shadow: 0 0 5px 5px #F5FBFE;
+}
+
+main>article:nth-of-type(4)>div>img:nth-of-type(6):hover{
+    box-shadow: 0 0 5px 5px #f2f2f2;;
+}
+
+main>article:nth-of-type(4)>div{
+    margin-top: 5vh;
+}
+
+/*======================
+    Page5 - download   
+======================*/
+
+main>article:nth-of-type(5){
+    margin-top: 10vh;
+    text-align: center;
+}
+
+main>article:nth-of-type(5)>div{
+    margin-top: 5vh;
+    display: inline-block;
+    width: 27%;
+    background: #F5FBFE;
+    border-radius: 10px;
+}
+
+main>article:nth-of-type(5)>div>h4{
+    font-size: 1.5em;
+    padding: 5vh 5vw;
+}
+
+main>article:nth-of-type(5)>div>h5{
+    font-size: 3.5em;
+    padding-bottom: 5vh;
+}
+
+main>article:nth-of-type(5)>div>p{
+    padding-bottom: 2vh;
+}
+
+main>article:nth-of-type(5)>div>ul>li{
+    font-family: 'Merriweather', serif;
+    line-height: 30px;
+}
+
+main>article:nth-of-type(5)>div>a{
+    display: inline-block;
+    background: #24bff2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 2vh 5vw;
+    margin: 3vh 0 6vh 0;
+}
+
+/*======================
+    Page6 - Footer   
+======================*/
+
+footer{
+    margin-top: 15vh;
+    text-align: center;
+}
+
+footer>h3{
+    padding: 5vh 0;
+}
+
+footer>ul>li{
+    padding: 1.5vh 0;
+}
+
+footer>ul>li:nth-last-of-type(1){
+    padding: 0 0 2vh 0;
+}
+
+footer>ul>li:nth-of-type(odd){
+    color:#202020;
+}
+
+footer>ul>li>span:nth-of-type(1)::before{
+    content:". ";
+    color: #3b5998;
+    font-size: 1.5em;
+}
+
+footer>ul>li>span:nth-of-type(2)::before{
+    font-size: 1.5em;
+    color: #fcaf45;
+    content:". ";
+}
+
+footer>ul>li>span:nth-of-type(3)::before{
+    content:". ";
+    color: #55acee;
+    font-size: 1.5em;
+}
+
+footer>ul>li>span:nth-of-type(4)::before{
+    content:". ";
+    color: #c4302b;
+    font-size: 1.5em;
+}
+
+/*=====================
+        The End
+=====================*/
